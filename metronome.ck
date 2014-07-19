@@ -1,4 +1,5 @@
-9000 => port;      // port to listen for osc subscribe messages
+9000 => int port;  // port to listen for osc subscribe messages
+if (me.args()) me.arg(0) => Std.atoi => port;
 120  => int bpm;   // beats per minute
 0    => int count; // count (1 through 4) of the beat.
 
